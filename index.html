@@ -18,6 +18,7 @@
                 
 
             <!--NAVIGATION-->
+            <!--searchbar-->
             <!--FILTRES-->
             <!--INFO-->
             <!--HEBERGEMENTS-REGULAR-->
@@ -46,8 +47,23 @@
                 <li><a href="#activites_lien">Activités</a></li>
             </ul>
         </nav>
+        
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <h2>En plein centre ville ou en pleine nature</h2>
+
+                 <!--searchbar-->
+        <div class="searchbar">
+            <div class="localisation">
+                <div class="mapmarked"><span class="fas fa-map-marker-alt"></span></div>
+            </div>
+            <form method="post" action="traitement.php">
+                <div class="right">
+                    <p><input type="search" name="search" class="champ" placeholder="Rechercher..."/></p>
+                    <input class="button" type="button" value="Rechercher"/>
+                </div>
+            </form>
+         </div>
+    
 
     </header>
 

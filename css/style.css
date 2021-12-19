@@ -2,11 +2,12 @@
             /*-------------------------------------*/
 
             /*------------NAVIGATION---------------*/
+            /*--------------searchbar--------------*/
             /*--------------FILTers----------------*/
                         /*---INFO---*/
             /*--------HEBERGEMENTS-REGULAR---------*/
             /*--------HEBERGEMENTS-POPULAR---------*/
-            /*--------------ACTIVITIES--------------*/
+            /*--------------ACTIVITIES-------------*/
             /*---------------FOOTER----------------*/
 
 * {
@@ -70,6 +71,92 @@ header h1 {
 header h2 {
     font-weight:400;
     margin-top: -10px;
+}
+
+            /*---------------------------------------*/
+            /*--------------searchbar----------------*/
+            /*---------------------------------------*/
+
+.searchbar { 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+            
+.localisation {
+    width: 62px;
+    height: 62px;
+    background-color: #F2F2F2;
+            
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+            
+    border-right: 0;
+    border-radius: 20px 0 0 20px;
+            
+}
+
+.localisation span {
+    font-size: 138%;
+}
+            
+.mapmarked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+            
+.champ {
+    padding-left: 20px;
+    border-left: 1px solid #F2F2F2;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    border-right: 0;
+    width: 270px;
+    height: 62px;
+}
+            
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.button {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.right p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+            
+.button {
+    width: 170px;
+    height: 62px;
+    border: 0;
+    padding: 0px 20px 0 20px;
+    text-align: center;
+    color: #fff;   
+    border-radius: 0px 20px 20px 0px;
+    background-color: #0065FC;
+}
+            
+.button:hover {
+    background-color: #0065FC;
+    color: white;
+            
+    box-shadow: inset -1px -1px 10px rgba(0, 0, 0, .3),
+                inset 1px 1px 10px rgba(255, 255, 255, .3);
+}
+            
+.button:active {        
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, .3),
+                inset -1px -1px 10px rgba(255, 255, 255, .3);
 }
 
             /*-------------------------------------*/
