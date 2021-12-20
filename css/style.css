@@ -17,7 +17,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    padding: 0 50px 80px 65px;
+    padding: 0 65px 0px 65px;
 }
 
 h2{
@@ -34,14 +34,15 @@ a {
             /*-------------------------------------*/
 nav {
     display: flex;
-    margin-top: 16px;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
 }
 
 .logo img {
     width: 140px;
     height:auto;
-    margin: 30px 30px 30px 10px;
+    margin: 45px 30px 20px 5px;
 }
 
 .menu {
@@ -52,9 +53,9 @@ nav {
 }
 
 .menu a {
-    display: block;
-    margin-top: -50px;
-    padding: 52px 30px 30px 30px;
+    display: flex;
+    margin-top: -16px;
+    padding: 60px 30px 50px 30px;
     font-size: 23px;
     border-top: 4px solid rgba(0, 0, 0, 0);
 }
@@ -251,6 +252,7 @@ form {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .infocercle {
@@ -620,34 +622,45 @@ footer {
     
     nav {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        flex-direction: column;
     }
-
+    
+    .logo img {
+        width: 140px;
+        height:auto;
+        margin: 30px 30px 30px 30px;
+    }
+    
+    .menu {
+        min-width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        padding-left: 0;
+        
+    }
+    
+    .menu li {
+        width: 50%;
+    }
+    
     .menu a {
         display: flex;
         justify-content: center;
-        font-size: 24px;
-        border-top: none;
+        padding-bottom: 20px;
+        font-size: 23px;
+        border-top: 4px solid rgba(0, 0, 0, 0);
         border-bottom: 4px solid #F2F2F2;
+        
     }
-
+    
     .menu a:hover {
         color: #0065FC;
         border-bottom: 4px solid #0065FC;
-        border-top: none;
-        transition: none;
     }
-
-    .lien1 a {
-        width:240px;
-    }
-
-    .lien2 a {
-        width:240px;
-    }
-
 
     header h1 {
         font-size: 28px;
@@ -695,32 +708,44 @@ footer {
     
     nav {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        flex-direction: column;
     }
-
+    
+    .logo img {
+        width: 140px;
+        height:auto;
+        margin: 30px 30px 30px 30px;
+    }
+    
+    .menu {
+        min-width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        padding-left: 0;
+        
+    }
+    
+    .menu li {
+        width: 50%;
+    }
+    
     .menu a {
         display: flex;
         justify-content: center;
-        font-size: 24px;
-        border-top: none;
+        padding-bottom: 20px;
+        font-size: 23px;
+        border-top: 4px solid rgba(0, 0, 0, 0);
         border-bottom: 4px solid #F2F2F2;
+        
     }
-
+    
     .menu a:hover {
         color: #0065FC;
         border-bottom: 4px solid #0065FC;
-        border-top: none;
-        transition: none;
-    }
-
-    .lien1 a {
-        width: 496px;
-    }
-
-    .lien2 a {
-        width: 496px;
     }
 
 
