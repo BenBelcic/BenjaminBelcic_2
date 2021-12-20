@@ -17,7 +17,6 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    margin: 60px 60px 60px 60px;
     padding: 0 50px 80px 65px;
 }
 
@@ -27,41 +26,42 @@ h2{
 
 a {
     text-decoration: none;
+    color: black;
 }
-
 
             /*-------------------------------------*/
             /*------------NAVIGATION---------------*/
             /*-------------------------------------*/
 nav {
     display: flex;
+    margin-top: 16px;
     justify-content: space-between;
 }
 
 .logo img {
-    max-width: 60%;
+    width: 140px;
     height:auto;
-    margin: 30px;
-    padding-top: 16px;
+    margin: 30px 30px 30px 10px;
 }
 
 .menu {
     display: flex;
     list-style: none;
     align-items: center;
+    padding-left:0;
 }
 
 .menu a {
-    padding: 59px 30px 30px 30px;
-    color: black;
+    display: block;
+    margin-top: -50px;
+    padding: 52px 30px 30px 30px;
     font-size: 23px;
-    border-top: 4px solid rgba(120, 120, 120, 0);
-    transition: all 0.4s;
+    border-top: 4px solid rgba(0, 0, 0, 0);
 }
 
 .menu a:hover {
     color: #0065FC;
-    border-top: 3px solid #0065FC;
+    border-top: 4px solid #0065FC;
 }
 
 header h1 {
@@ -82,10 +82,19 @@ header h2 {
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
+    max-width: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
 }
             
 .localisation {
-    width: 62px;
+    min-width: 62px;
     height: 62px;
     background-color: #F2F2F2;
             
@@ -109,26 +118,28 @@ header h2 {
 }
             
 .champ {
+    font-size: 22px;
+    font-weight: 700;
     padding-left: 20px;
-    border-left: 1px solid #F2F2F2;
-    border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;
+    border-left: 1.5px solid #F2F2F2;
+    border-top: 1.5px solid #F2F2F2;
+    border-bottom: 1.5px solid #F2F2F2;
     border-right: 0;
-    width: 270px;
+    width: 275px;
     height: 62px;
 }
-            
+
+::placeholder {
+    font-size: 20px;
+    font-weight: 400;
+}
+
 .right {
     display: flex;
     justify-content: center;
     align-items: center;
 }
   
-.button {
-    font-size: 22px;
-    font-weight: 700;
-}
-
 .right p {
     display: flex;
     justify-content: center;
@@ -136,7 +147,7 @@ header h2 {
 }
             
 .button {
-    width: 170px;
+    width: 177px;
     height: 62px;
     border: 0;
     padding: 0px 20px 0 20px;
@@ -144,19 +155,22 @@ header h2 {
     color: #fff;   
     border-radius: 0px 20px 20px 0px;
     background-color: #0065FC;
+    font-size: 22px;
+    font-weight: 700;
 }
             
 .button:hover {
     background-color: #0065FC;
     color: white;
+    cursor: pointer;
             
-    box-shadow: inset -1px -1px 10px rgba(0, 0, 0, .3),
-                inset 1px 1px 10px rgba(255, 255, 255, .3);
+    box-shadow: inset -2px -2px 7px rgba(0, 0, 0, .3),
+                inset 2px 2px 7px rgba(255, 255, 255, .3);
 }
             
 .button:active {        
     box-shadow: inset 1px 1px 10px rgba(0, 0, 0, .3),
-                inset -1px -1px 10px rgba(255, 255, 255, .3);
+                inset -1px -1px 5px rgba(255, 255, 255, .2);
 }
 
             /*-------------------------------------*/
@@ -183,7 +197,7 @@ header h2 {
 }
 
 .bodyfilter:nth-child(2) {
-    width: 228px;
+    width: 238px;
 }
 
 .bodyfilter:nth-child(3) {
@@ -195,7 +209,7 @@ header h2 {
 }
 
 .bodyfilter:nth-child(5) {
-    width: 288px;
+    width: 298px;
 }
 
 .bodyfilter:hover {
@@ -224,7 +238,7 @@ header h2 {
 
 .filters p {
     display: flex;
-    margin: 11px;
+    margin: 14px;
     font-size: 22px;
     font-weight: 700;
 }
@@ -569,4 +583,154 @@ footer {
 
 .infos_footer:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    
+    body {
+        font-family: 'Raleway', sans-serif;
+        padding: 0 0px 80px 0px;
+        
+    }
+    
+    h2{
+        font-size: 24px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    
+                /*-------------------------------------*/
+                /*------------NAVIGATION---------------*/
+                /*-------------------------------------*/
+
+    .logo img {
+        width: 135px;
+        height:auto;
+        margin: 0 0 15px 0;
+    
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu a {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        border-top: none;
+        border-bottom: 4px solid #F2F2F2;
+    }
+
+    .menu a:hover {
+        color: #0065FC;
+        border-bottom: 4px solid #0065FC;
+        border-top: none;
+        transition: none;
+    }
+
+    .lien1 a {
+        width:240px;
+    }
+
+    .lien2 a {
+        width:240px;
+    }
+
+
+    header h1 {
+        font-size: 28px;
+    }
+    
+    header h2 {
+        font-weight:400;
+        margin-top: -10px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    
+    body {
+        font-family: 'Raleway', sans-serif;
+        padding: 0 0px 80px 0px;
+        
+    }
+    
+    h2{
+        font-size: 24px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    
+                /*-------------------------------------*/
+                /*------------NAVIGATION---------------*/
+                /*-------------------------------------*/
+
+    .logo img {
+        width: 135px;
+        height:auto;
+        margin: 0 0 15px 0;
+    
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu a {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        border-top: none;
+        border-bottom: 4px solid #F2F2F2;
+    }
+
+    .menu a:hover {
+        color: #0065FC;
+        border-bottom: 4px solid #0065FC;
+        border-top: none;
+        transition: none;
+    }
+
+    .lien1 a {
+        width: 496px;
+    }
+
+    .lien2 a {
+        width: 496px;
+    }
+
+
+    header h1 {
+        font-size: 28px;
+    }
+    
+    header h2 {
+        font-weight:400;
+        margin-top: -10px;
+    }
+
 }
