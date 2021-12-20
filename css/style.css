@@ -614,10 +614,9 @@ footer {
                 /*-------------------------------------*/
 
     .logo img {
-        width: 135px;
+        width: 140px;
         height:auto;
-        margin: 0 0 15px 0;
-    
+        margin: 30px 30px -20px 30px;
     }
     
     nav {
@@ -625,12 +624,6 @@ footer {
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-    }
-    
-    .logo img {
-        width: 140px;
-        height:auto;
-        margin: 30px 30px 30px 30px;
     }
     
     .menu {
@@ -659,6 +652,7 @@ footer {
     
     .menu a:hover {
         color: #0065FC;
+        border-top: 4px solid rgba(0, 0, 0, 0);
         border-bottom: 4px solid #0065FC;
     }
 
@@ -699,13 +693,7 @@ footer {
                 /*------------NAVIGATION---------------*/
                 /*-------------------------------------*/
 
-    .logo img {
-        width: 135px;
-        height:auto;
-        margin: 0 0 15px 0;
-    
-    }
-    
+
     nav {
         display: flex;
         justify-content: space-between;
@@ -716,7 +704,7 @@ footer {
     .logo img {
         width: 140px;
         height:auto;
-        margin: 30px 30px 30px 30px;
+        margin: 30px 30px -20px 30px;
     }
     
     .menu {
@@ -745,6 +733,7 @@ footer {
     
     .menu a:hover {
         color: #0065FC;
+        border-top: 4px solid rgba(0, 0, 0, 0);
         border-bottom: 4px solid #0065FC;
     }
 
