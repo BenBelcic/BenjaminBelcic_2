@@ -183,27 +183,27 @@ form {
             /*-------------------------------------*/
 .filters {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 30px;
-    margin-bottom: 24px;
-    max-width: 1180px;
+    max-width: 1250px;
 
 }
 
 .filters h2 {
     display: flex;
-    margin-right: 15px;
+    margin-right: 35px;
 }
 
 .bodyfilter {
     display: flex;
-    margin-right: 5px;
     align-items: center;
     border: 3px solid #d6d6d6;
     height: 64px;
     border-radius: 64px;
+    margin-right: 35px;
+    margin-bottom: 20px;
     transition: all 0.4s;
 }
 
@@ -791,6 +791,9 @@ form {
 }
 
 .filters {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
     margin-top: 10px;
     padding-right: 20px;
     padding-left: 20px;
@@ -799,10 +802,10 @@ form {
 .filters h2 {
     display: flex;
     min-width: 100%;
-    margin-right: 39px;
 }
 
 .bodyfilter {
+    margin-right: 12px;
     margin-bottom: 20px;
 }
 
@@ -812,6 +815,8 @@ form {
 }
 
 }
+
+/*___________________________________________________________________TABLETTE_____________________________________________________________*/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
@@ -1004,5 +1009,30 @@ form {
 .btn_desktop {
     display: none;
 }
+
+.filters {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.filters h2 {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+}
+
+.bodyfilter {
+    margin-bottom: 20px;
+}
+
+.info {
+    padding-left: 19px;
+    padding-right: 14px;
+}
+
 
 }
