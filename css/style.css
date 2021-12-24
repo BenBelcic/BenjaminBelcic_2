@@ -270,11 +270,11 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                border: 1.5px solid #d6d6d6;
                 height: 32px;
                 min-width: 32px;
                 border-radius: 32px;
                 margin-right: 15px;
+                border: 1.5px solid #d6d6d6;
             }
 
             .info span {
@@ -290,16 +290,16 @@
             /*--------HEBERGEMENTS---------*/
             /*-----------------------------*/
             .hebergements {
-                max-width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 flex-flow: row wrap;
+                max-width: 100%;
                 margin-left: -13px;
                 margin-right: -23px;
             }
 
-            .hebergements p span, strong {
+            .hebergements span, strong {
                 font-weight: bold;
             }
 
@@ -307,14 +307,13 @@
             /*--------HEBERGEMENTS-REGULAR---------*/
             /*-------------------------------------*/
             .megabox_all_hebergements_regular {
+                display: flex;
+                flex-direction: column;
+                margin-right: auto;
                 width: auto;
                 min-height: 750px;
                 background-color: #F2F2F2;
                 border-radius: 30px;
-
-                display: flex;
-                flex-direction: column;
-                margin-right: auto;
             }
 
             .megabox_all_hebergements_regular h2 {
@@ -322,8 +321,6 @@
             }
 
             .box_cartes {
-                max-width: 1118px;
-                height: 550px;
                 display: flex;
                 justify-content: space-evenly;
                 align-content: space-between;
@@ -331,6 +328,8 @@
                 margin: auto;
                 margin-left: 9px;
                 margin-right: 9px;
+                width: 1118px;
+                height: 550px;
             }
 
             .box_cartes a {
@@ -415,7 +414,7 @@
             }
 
 
-            .megabox_all_hebergements_popular .h2_pop {
+            .h2_pop {
                 /* H2 */
                 display: flex;
                 flex-direction: row;
@@ -424,7 +423,7 @@
                 margin: 30px 50px -24px 60px;
             }
 
-            .megabox_all_hebergements_popular .h2_pop span {
+            .h2_pop span {
                 /* icon increasing */
                 font-size: 150%;
             }
