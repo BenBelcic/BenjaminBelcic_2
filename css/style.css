@@ -18,7 +18,8 @@
     body {
         font-family: 'Raleway', sans-serif;
         padding: 0 43px 0px 67px;
-
+        margin:auto;
+        max-width: 2000px;
     }
 
     h2 {
@@ -1634,7 +1635,6 @@
     .box_card_popular {
         height: 990px;
     }
-
     
 }
 
