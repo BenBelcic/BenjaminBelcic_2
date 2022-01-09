@@ -473,8 +473,13 @@ input {
 }
 
 /*_______________| - ACTIVITIES - |______________*/
+.activities {
+    padding-top: 20px;
+}
+
 .titre_activite {
-    margin: 70px 0 10px 0px;
+    margin: 50px 0 5px -10px;
+    font-size: 180%;
 }
 
 .megabox_all_activities {
@@ -875,7 +880,6 @@ footer ul {
     /*_______________| - ACTIVITIES - |______tablette________*/
     .titre_activite {
         margin: 20px 0 0 50px;
-        font-size: 30px;
     }
 
     .megabox_all_activities {
@@ -884,10 +888,6 @@ footer ul {
         padding: 20px;
         margin: auto;
         margin-left: 0px;
-    }
-
-    .activities {
-        padding-top: 20px;
     }
 
     .column_activity {
