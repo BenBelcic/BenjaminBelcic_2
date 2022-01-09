@@ -1,1180 +1,1231 @@
-    /*-------------SUMMARY----------------*/
-    /*-------------------------------------*/
+* {
+    box-sizing: border-box;
+}
 
-    /*------------NAVIGATION---------------*/
-    /*--------------searchbar--------------*/
-    /*--------------FILTers----------------*/
-    /*---INFO---*/
-    /*--------HEBERGEMENTS-REGULAR---------*/
-    /*--------HEBERGEMENTS-POPULAR---------*/
-    /*--------------ACTIVITIES-------------*/
-    /*---------------FOOTER----------------*/
+body {
+    font-family: 'Raleway', sans-serif;
+    padding: 0 43px 0px 67px;
+    margin: auto;
+    max-width: 2000px;
+}
 
+h2 {
+    font-size: 25px;
+}
 
-    * {
-        box-sizing: border-box;
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*_______________| - NAVIGATION - |______________*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+}
+
+.logo img {
+    width: 140px;
+    height: auto;
+    margin: 45px 30px 20px 5px;
+}
+
+li {
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+.menu a {
+    display: flex;
+    margin-top: -16px;
+    padding: 60px 30px 50px 30px;
+    font-size: 23px;
+    border-top: 4px solid rgba(0, 0, 0, 0);
+}
+
+.menu a:hover {
+    color: #0065FC;
+    border-top: 4px solid #0065FC;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header h2 {
+    margin-top: -10px;
+    font-weight: 400;
+}
+
+/*_______________| - SEARCHBAR - |______________*/
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.localisation {
+    display: flex;
+    justify-content: center;
+    min-width: 62px;
+    height: 62px;
+    background-color: #F2F2F2;
+    border-right: 0;
+    border-radius: 20px 0 0 20px;
+}
+
+.localisation span {
+    font-size: 138%;
+}
+
+.mapmarked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.champ {
+    display: flex;
+    width: 275px;
+    height: 62px;
+    padding-left: 20px;
+    border-left: 1.5px solid #F2F2F2;
+    border-top: 1.5px solid #F2F2F2;
+    border-bottom: 1.5px solid #F2F2F2;
+    border-right: 0;
+    font-weight: 700;
+}
+
+.champ_mom {
+    display: flex;
+    width: 275px;
+    height: 62px;
+}
+
+::placeholder {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btn_desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 177px;
+    height: 62px;
+    border: 0;
+    color: #fff;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #0065FC;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+input {
+    font-size: 18px;
+}
+
+.btn_desktop:hover {
+    background-color: #0065FC;
+    color: white;
+    cursor: pointer;
+    box-shadow: inset -2px -2px 7px rgba(0, 0, 0, .3),
+        inset 2px 2px 7px rgba(255, 255, 255, .3);
+}
+
+.btn_desktop:active {
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, .3),
+        inset -1px -1px 5px rgba(255, 255, 255, .2);
+}
+
+.btn_mobile {
+    display: none;
+}
+
+/*_______________| - FILTERS - |______________*/
+.filters {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    max-width: 1250px;
+}
+
+.filters h2 {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.bodyfilter {
+    display: flex;
+    align-items: center;
+    border: 3px solid #d6d6d6;
+    height: 64px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 64px;
+    transition: all 0.4s;
+}
+
+.bodyfilter:nth-child(2) {
+    min-width: 240px;
+}
+
+.bodyfilter:nth-child(3) {
+    min-width: 191px;
+}
+
+.bodyfilter:nth-child(4) {
+    min-width: 236px;
+}
+
+.bodyfilter:nth-child(5) {
+    min-width: 308px;
+}
+
+.bodyfilter:hover {
+    background-color: #deebff;
+    border: 3px solid #deebff;
+    cursor: pointer;
+}
+
+.iconcercle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5px;
+    height: 64px;
+    min-width: 64px;
+    border: 1px #DEEBFF;
+    border-radius: 64px;
+    background-color: #DEEBFF;
+}
+
+.filters span {
+    font-size: 138%;
+    color: #0065FC;
+}
+
+.filters p {
+    display: flex;
+    margin: 14px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/*_______________| - INFO - |______________*/
+.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.infocercle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    min-width: 32px;
+    margin-right: 15px;
+    border-radius: 32px;
+    border: 1.5px solid #d6d6d6;
+}
+
+.info span {
+    font-size: 90%;
+    color: #0065FC;
+}
+
+.info p {
+    font-size: 22px;
+}
+
+/*_______________| - HEBERGEMENTS - |______________*/
+.hebergements {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    max-width: 100%;
+    margin: auto;
+    margin-left: -13px;
+
+}
+
+.hebergements span, strong {
+    font-weight: bold;
+}
+
+.h2_reg {
+    display: flex;
+    width: 98%;
+    margin: auto;
+}
+
+.titre_megabox {
+    margin-left: 30px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    font-size: 174%;
+}
+
+/*_______________| - HEBERGEMENTS-REGULAR - |______________*/
+.mega_box_regular {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 64.9%;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #F2F2F2;
+}
+
+.box_card_regular {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 98%;
+    margin: auto;
+}
+
+.box_hebergement_regular {
+    max-width: 320px;
+    min-width: 320px;
+    margin: 20px;
+}
+
+.link_regular {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    min-width: 320px;
+    height: 260px;
+    margin: 0px;
+    border: 6px solid white;
+    border-radius: 28px;
+    background-color: white;
+    box-shadow: 3px 3px 10px #C2C2C2;
+}
+
+.photo_reg {
+    max-width: 308px;
+    min-width: 308px;
+    height: 155px;
+    border-radius: 22px 22px 0 0;
+    object-fit: cover;
+}
+
+.legend_photo_regular {
+    padding-left: 12px;
+    padding-bottom: 10px;
+}
+
+.price_reg {
+    margin-top: 0px;
+    margin-bottom: 9px;
+}
+
+.name_hebergement_regular {
+    font-size: 130%;
+    font-weight: 800;
+    margin-top: 11px;
+    margin-bottom: 9px;
+}
+
+.stars_rating {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+}
+
+.star_blue {
+    color: #0065FC;
+}
+
+.star_grey {
+    color: #F2F2F2;
+}
+
+.afficher_plus {
+    width: 150px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.afficher_plus:hover {
+    cursor: pointer;
+}
+
+/*_______________| - HEBERGEMENTS-POPULAR - |______________*/
+.mega_box_popular {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 31%;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #F2F2F2;
+
+}
+
+.h2_pop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 96%;
+    margin: auto;
+    padding-right: 30px;
+}
+
+.icon_increase {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 170%;
+}
+
+.box_card_popular {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 96%;
+    margin: auto;
+    margin-bottom: 7.5px;
+}
+
+.box_hebergement_popular {
+    max-width: 510px;
+    width: 100%;
+    min-width: 270px;
+}
+
+.link_popular {
+    display: flex;
+    max-width: 510px;
+    min-width: 270px;
+    height: 190px;
+    margin: 20px;
+    border: 6px solid white;
+    border-radius: 28px;
+    background-color: white;
+    box-shadow: 3px 3px 10px #C2C2C2;
+}
+
+.photo_pop {
+    max-width: 178px;
+    min-width: 178px;
+    min-height: 178px;
+    border-radius: 22px 0 0 22px;
+    object-fit: cover;
+}
+
+.legend_photo_popular {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding-right: 55px;
+    padding-left: 20px;
+    padding-bottom: 2%;
+}
+
+.legend_photo_popular_2 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding-right: 40px;
+    padding-left: 20px;
+    padding-bottom: 2%;
+    overflow: auto;
+}
+
+.name_hebergement_popular {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 130%;
+    font-weight: 800;
+}
+
+.price_pop {
+    margin-top: 5px;
+    margin-bottom: auto;
+}
+
+/*_______________| - ACTIVITIES - |______________*/
+.titre_activite {
+    margin: 70px 0 10px 0px;
+}
+
+.megabox_all_activities {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-left: -13px;
+}
+
+.column_activity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box_activity {
+    max-width: 410px;
+    min-width: 270px;
+    margin: 23px 0px;
+}
+
+.link_activity {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    min-width: 270px;
+    height: 570px;
+    border: 0;
+    border-radius: 28px;
+    background-color: white;
+    box-shadow: 3px 3px 10px #C2C2C2;
+}
+
+.photo_activity {
+    min-width: 410px;
+    height: 510px;
+    min-height: 510px;
+    border-radius: 22px 22px 0 0;
+    object-fit: cover;
+}
+
+.column_activity:nth-child(2) .box_activity:nth-child(1) .link_activity {
+    height: 315px;
+}
+
+.column_activity:nth-child(2) .box_activity:nth-child(1) .photo_activity {
+    height: 255px;
+    min-height: 255px;
+}
+
+.column_activity:nth-child(2) .box_activity:nth-child(2) .link_activity {
+    height: 205px;
+}
+
+.column_activity:nth-child(2) .box_activity:nth-child(2) .photo_activity {
+    height: 145px;
+    min-height: 145px;
+}
+
+.column_activity:nth-child(4) .box_activity:nth-child(1) .link_activity {
+    height: 255px;
+}
+
+.column_activity:nth-child(4) .box_activity:nth-child(1) .photo_activity {
+    height: 195px;
+    min-height: 195px;
+    object-position: 80% 20%;
+}
+
+.column_activity:nth-child(4) .box_activity:nth-child(2) .photo_activity {
+    height: 205px;
+    min-height: 205px;
+    object-position: 80% 20%;
+}
+
+.column_activity:nth-child(4) .box_activity:nth-child(2) .link_activity {
+    height: 265px;
+}
+
+.name_activity {
+    font-weight: 700;
+    margin: 18px 20px 20px 20px;
+}
+
+/*_______________| - FOOTER - |______________*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 0 -43px 0 -67px;
+    padding-right: 30%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #F2F2F2;
+}
+
+footer ul {
+    padding-left: 0px;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+/*_____________________________________________| - D E S K T O P - > T A B L E T T E - |__________________________________________________*/
+
+@media screen and (min-width: 992px) and (max-width: 1488px) {
+
+    /*_______________| - HEBERGEMENTS-POPULAR - |______________*/
+    .hebergements {
+        align-items: center;
+        flex-flow: column wrap;
     }
+
+    .mega_box_popular {
+        padding: 30px;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .box_card_popular {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .box_hebergement_popular {
+        max-width: 527px;
+    }
+
+    .legend_photo_popular {
+        padding-right: 60px;
+    }
+
+    .legend_photo_popular_2 {
+        padding-right: 10px;
+    }
+
+    .name_hebergement_popular {
+        margin-top: 11px;
+    }
+
+    /*_______________| - HEBERGEMENTS-REGULAR - |______________*/
+    .mega_box_regular {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1754px) {
+
+    .megabox_all_activities {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 1340px) and (max-width: 1800px) {
+
+    .megabox_all_activities {
+        justify-content: space-evenly;
+    }
+
+    .column_activity:nth-child(4) {
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+/*________________________________________| - T A B L E T T E -|________________________________________________________________________*/
+
+@media screen and (max-width: 992px) {
 
     body {
-        font-family: 'Raleway', sans-serif;
-        padding: 0 43px 0px 67px;
-        margin: auto;
-        max-width: 2000px;
+        max-width: 100%;
+        padding: 0;
     }
 
-    h2 {
-        font-size: 25px;
+    /*_______________| - NAVIGATION - |______tablette________*/
+    .logo img {
+        width: 170px;
+        height: auto;
+        margin: 25px 30px -28px 30px;
     }
 
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    /*_______________| - NAVIGATION - |______________*/
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 0;
+        flex-direction: column;
     }
 
-    .logo img {
-        width: 140px;
-        height: auto;
-        margin: 45px 30px 20px 5px;
+    .sous_nav {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .menu {
         display: flex;
-        list-style: none;
+        justify-content: space-evenly;
         align-items: center;
+        min-width: 100%;
         padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 20px;
+        list-style: none;
+
+    }
+
+    .menu li {
+        width: 50%;
     }
 
     .menu a {
-        display: flex;
-        margin-top: -16px;
-        padding: 60px 30px 50px 30px;
-        font-size: 23px;
-        border-top: 4px solid rgba(0, 0, 0, 0);
+        justify-content: center;
+        padding-bottom: 22px;
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 28px;
+        border-bottom: 4px solid #F2F2F2;
     }
 
     .menu a:hover {
         color: #0065FC;
-        border-top: 4px solid #0065FC;
+        border-top: 4px solid rgba(0, 0, 0, 0);
+        border-bottom: 4px solid #0065FC;
     }
 
     header h1 {
         font-size: 28px;
+        margin-bottom: 20px;
     }
 
     header h2 {
-        margin-top: -10px;
+        font-size: 26px;
         font-weight: 400;
+        margin-top: -10px;
     }
 
-    /*_______________| - SEARCHBAR - |______________*/
+    /*_______________| - SEARCH BAR - |______tablette________*/
     form {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
     }
 
     .localisation {
-        display: flex;
-        justify-content: center;
-        min-width: 62px;
-        height: 62px;
-        background-color: #F2F2F2;
-        border-right: 0;
-        border-radius: 20px 0 0 20px;
+        min-width: 84px;
+        height: 84px;
     }
 
     .localisation span {
-        font-size: 138%;
-    }
-
-    .mapmarked {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: 200%;
     }
 
     .champ {
-        display: flex;
-        width: 275px;
-        height: 62px;
-        padding-left: 20px;
-        border-left: 1.5px solid #F2F2F2;
-        border-top: 1.5px solid #F2F2F2;
-        border-bottom: 1.5px solid #F2F2F2;
-        border-right: 0;
-        font-weight: 700;
+        width: 100%;
+        height: 84px;
     }
 
     .champ_mom {
-        display: flex;
-        width: 275px;
-        height: 62px;
+        width: 500px;
+        height: 84px;
     }
 
-    ::placeholder {
-        font-size: 20px;
-        font-weight: 400;
-    }
-
-    .btn_desktop {
+    .right {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 177px;
-        height: 62px;
+    }
+
+    .right p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 84px;
+        height: 84px;
+        margin-left: -16px;
         border: 0;
         color: #fff;
-        border-radius: 0px 20px 20px 0px;
+        border-radius: 20px 20px 20px 20px;
         background-color: #0065FC;
         font-size: 22px;
         font-weight: 700;
     }
 
-    .btn_desktop:hover {
-        background-color: #0065FC;
+    .btn_mobile span {
+        font-size: 140%;
+    }
+
+    .btn_mobile:hover {
         color: white;
         cursor: pointer;
         box-shadow: inset -2px -2px 7px rgba(0, 0, 0, .3),
             inset 2px 2px 7px rgba(255, 255, 255, .3);
     }
 
-    .btn_desktop:active {
+    .btn_mobile:active {
         box-shadow: inset 1px 1px 10px rgba(0, 0, 0, .3),
             inset -1px -1px 5px rgba(255, 255, 255, .2);
     }
 
-    .btn_mobile {
+    .btn_desktop {
         display: none;
     }
 
-    /*_______________| - FILTERS - |______________*/
+    /*_______________| - FILTERS - |______tablette________*/
     .filters {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 30px;
-        max-width: 1250px;
+        justify-content: space-evenly;
+        margin-top: 4px;
+        padding-right: 30px;
+        padding-left: 30px;
     }
 
     .filters h2 {
-        display: flex;
-        align-items: center;
-        margin-right: 40px;
+        justify-content: center;
+        margin-right: 0;
+        font-size: 34px;
+        min-width: 100%;
     }
 
     .bodyfilter {
-        display: flex;
-        align-items: center;
-        border: 3px solid #d6d6d6;
-        height: 64px;
-        margin-right: 40px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        border-radius: 64px;
-        transition: all 0.4s;
+        margin-right: 12px;
     }
 
-    .bodyfilter:nth-child(2) {
-        min-width: 240px;
-    }
-
-    .bodyfilter:nth-child(3) {
-        min-width: 191px;
-    }
-
-    .bodyfilter:nth-child(4) {
-        min-width: 236px;
-    }
-
-    .bodyfilter:nth-child(5) {
-        min-width: 308px;
-    }
-
-    .bodyfilter:hover {
-        background-color: #deebff;
-        border: 3px solid #deebff;
-        cursor: pointer;
-    }
-
-    .iconcercle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -5px;
-        height: 64px;
-        min-width: 64px;
-        border: 1px #DEEBFF;
-        border-radius: 64px;
-        background-color: #DEEBFF;
-    }
-
-    .filters span {
-        font-size: 138%;
-        color: #0065FC;
-    }
-
-    .filters p {
-        display: flex;
-        margin: 14px;
-        font-size: 22px;
-        font-weight: 700;
-    }
-
-    /*_______________| - INFO - |______________*/
     .info {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin-bottom: 20px;
+        padding-left: 19px;
     }
 
-    .infocercle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 32px;
-        min-width: 32px;
-        margin-right: 15px;
-        border-radius: 32px;
-        border: 1.5px solid #d6d6d6;
-    }
-
-    .info span {
-        font-size: 90%;
-        color: #0065FC;
-    }
-
-    .info p {
-        font-size: 22px;
-    }
-
-    /*_______________| - HEBERGEMENTS - |______________*/
+    /*_______________| - HEBERGEMENTS-POPULAR - |______tablette________*/
     .hebergements {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: row;
-        max-width: 100%;
-        margin: auto;
-        margin-left: -13px;
-
-    }
-
-    .hebergements span, strong {
-        font-weight: bold;
-    }
-
-    .h2_reg {
-        display: flex;
-        width: 98%;
-        margin: auto;
-    }
-
-    .titre_megabox {
-        margin-left: 30px;
-        margin-bottom: 5px;
-        margin-top: 30px;
-        font-size: 174%;
-    }
-
-    /*_______________| - HEBERGEMENTS-REGULAR - |______________*/
-    .mega_box_regular {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: column;
-        width: 64.9%;
-        padding: 10px;
-        border-radius: 30px;
-        background-color: #F2F2F2;
-    }
-
-    .box_card_regular {
-        display: flex;
-        justify-content: space-evenly;
         align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 98%;
+        flex-flow: column-reverse wrap;
         margin: auto;
     }
 
-    .box_hebergement_regular {
-        max-width: 320px;
-        min-width: 320px;
-        margin: 20px;
-    }
-
-    .link_regular {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 100%;
-        min-width: 320px;
-        height: 260px;
-        margin: 0px;
-        border: 6px solid white;
-        border-radius: 28px;
-        background-color: white;
-        box-shadow: 3px 3px 10px #C2C2C2;
-    }
-
-    .photo_reg {
-        max-width: 308px;
-        min-width: 308px;
-        height: 155px;
-        border-radius: 22px 22px 0 0;
-        object-fit: cover;
-    }
-
-    .legend_photo_regular {
-        padding-left: 12px;
-        padding-bottom: 10px;
-    }
-
-    .price_reg {
-        margin-top: 0px;
-        margin-bottom: 9px;
-    }
-
-    .name_hebergement_regular {
-        font-size: 130%;
-        font-weight: 800;
-        margin-top: 11px;
-        margin-bottom: 9px;
-    }
-
-    .stars_rating {
-        display: flex;
-        flex-direction: row;
-        margin-right: auto;
-    }
-
-    .star_blue {
-        color: #0065FC;
-    }
-
-    .star_grey {
-        color: #F2F2F2;
-    }
-
-    .afficher_plus {
-        width: 150px;
-        margin-left: 40px;
-        margin-top: 30px;
-        margin-bottom: 40px;
-        font-size: 22px;
-        font-weight: bold;
-    }
-
-    .afficher_plus:hover {
-        cursor: pointer;
-    }
-
-    /*_______________| - HEBERGEMENTS-POPULAR - |______________*/
     .mega_box_popular {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: column;
-        width: 568px;
-        padding: 10px;
-        border-radius: 30px;
-        background-color: #F2F2F2;
-
-    }
-
-    .h2_pop {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 96%;
-        margin: auto;
-        padding-right: 30px;
-    }
-
-    .icon_increase {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        font-size: 170%;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        border-radius: 0px;
     }
 
     .box_card_popular {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        width: 96%;
-        margin: auto;
-        margin-bottom: 7.5px;
+        margin-bottom: 40px;
     }
 
-    .box_hebergement_popular {
-        max-width: 510px;
+    .h2_pop {
+        margin-bottom: 16px;
+    }
+
+    .box_card_popular {
         width: 100%;
-        min-width: 270px;
     }
 
     .link_popular {
-        display: flex;
-        max-width: 510px;
-        min-width: 270px;
-        height: 190px;
-        margin: 20px;
-        border: 6px solid white;
-        border-radius: 28px;
-        background-color: white;
-        box-shadow: 3px 3px 10px #C2C2C2;
+        margin: 10px 20px;
     }
 
-    .photo_pop {
-        max-width: 178px;
-        min-width: 178px;
-        min-height: 178px;
-        border-radius: 22px 0 0 22px;
-        object-fit: cover;
+    .box_hebergement_popular {
+        max-width: 527px;
     }
 
     .legend_photo_popular {
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        padding-right: 55px;
-        padding-left: 20px;
-        padding-bottom: 2%;
-        overflow: auto;
+        padding-right: 0px;
+        padding-left: 10px;
     }
 
     .legend_photo_popular_2 {
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        padding-right: 40px;
-        padding-left: 20px;
-        padding-bottom: 2%;
-        overflow: auto;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
     .name_hebergement_popular {
-        margin-top: 8px;
-        margin-bottom: 0;
-        font-size: 130%;
-        font-weight: 800;
+        margin-top: 11px;
     }
 
-    .price_pop {
-        margin-top: 5px;
-        margin-bottom: auto;
+    /*_______________| - HEBERGEMENTS-REGULAR - |______tablette________*/
+    .mega_box_regular {
+        width: 100%;
+        background-color: white;
     }
 
-    /*_______________| - ACTIVITIES - |______________*/
+    .h2_reg {
+        margin-bottom: 16px;
+    }
+
+    /*_______________| - ACTIVITIES - |______tablette________*/
     .titre_activite {
-        margin: 70px 0 10px 0px;
+        margin: 20px 0 0 50px;
+        font-size: 30px;
     }
 
     .megabox_all_activities {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        width: 100%;
-        margin-bottom: 40px;
-        margin-left: -13px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: auto;
+        margin-left: 0px;
+    }
+
+    .activities {
+        padding-top: 20px;
     }
 
     .column_activity {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
+        width: 100%;
+        padding: 0px;
     }
 
     .box_activity {
-        max-width: 410px;
+        max-width: 490px;
+        width: 100%;
         min-width: 270px;
-        margin: 23px 0px;
+        margin: 16px 20px;
     }
 
     .link_activity {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 100%;
-        min-width: 270px;
-        height: 570px;
-        border: 0;
-        border-radius: 28px;
-        background-color: white;
-        box-shadow: 3px 3px 10px #C2C2C2;
+        min-width: 100%;
+        height: 260px;
     }
 
-    .photo_activity {        
-        min-width: 410px;
-        height: 510px;
-        min-height: 510px;
-        border-radius: 22px 22px 0 0;
-        object-fit: cover;
+    .photo_activity {
+        min-width: 100%;
+        height: 200px;
+        min-height: 200px;
     }
 
-    .column_activity:nth-child(2) .box_activity:nth-child(1) .link_activity {
-        height: 315px;
-    }
-
-    .column_activity:nth-child(2) .box_activity:nth-child(1) .photo_activity {
-        height: 255px;
-        min-height: 255px;
-    }
-
-    .column_activity:nth-child(2) .box_activity:nth-child(2) .link_activity {
-        height: 205px;
-    }
-
-    .column_activity:nth-child(2) .box_activity:nth-child(2) .photo_activity {
-        height: 145px;
-        min-height: 145px;
-    }
-
-    .column_activity:nth-child(4) .box_activity:nth-child(1) .link_activity {
-        height: 255px;
-    }
-
-    .column_activity:nth-child(4) .box_activity:nth-child(1) .photo_activity {
-        height: 195px;
-        min-height: 195px;
-        object-position: 80% 20%;
-    }
-
+    .column_activity:nth-child(2) .box_activity:nth-child(1) .photo_activity,
+    .column_activity:nth-child(2) .box_activity:nth-child(2) .photo_activity,
+    .column_activity:nth-child(4) .box_activity:nth-child(1) .photo_activity,
     .column_activity:nth-child(4) .box_activity:nth-child(2) .photo_activity {
-        height: 205px;
-        min-height: 205px;
-        object-position: 80% 20%;
+        height: 200px;
+        min-height: 200px;
     }
 
+    .column_activity:nth-child(2) .box_activity:nth-child(1) .link_activity,
+    .column_activity:nth-child(2) .box_activity:nth-child(2) .link_activity,
+    .column_activity:nth-child(4) .box_activity:nth-child(1) .link_activity,
     .column_activity:nth-child(4) .box_activity:nth-child(2) .link_activity {
-        height: 265px;
+        height: 260px;
     }
 
-    .name_activity {
-        margin: 18px 20px 20px 20px;
+    .afficher_plus {
+        margin-bottom: 20px;
     }
 
-    /*_______________| - FOOTER - |______________*/
+    /*_______________| - F O O T E R - |___tablette_________*/
     footer {
-        display: flex;
+        margin: 0;
+        padding-right: 10%;
+    }
+
+}
+
+/*________________________________________| - M O B I L E -|________________________________________________________________________*/
+
+@media screen and (max-width: 768px) {
+
+    /*_______________| - NAVIGATION - |______mobile________*/
+    .logo img {
+        margin-top: 20px;
+        width: 110px;
+    }
+
+    header h1 {
+        margin-bottom: 16px;
+        font-size: 23px;
+    }
+
+    header h2 {
+        margin-top: 0;
+        font-size: 17px;
+    }
+
+    .menu a {
+        font-size: 17px;
+        padding-top: 50px;
+        padding-bottom: 14px;
+    }
+
+    .sous_nav {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*_______________| - SEARCHBAR - |______mobile________*/
+    form {
+        margin-top: 0;
+    }
+
+    .localisation {
+        min-width: 60px;
+        height: 60px;
+    }
+
+    .localisation span {
+        font-size: 120%;
+    }
+
+    .champ {
+        height: 60px;
+    }
+
+    .champ_mom {
+        width: 70%;
+        height: 60px;
+    }
+
+    .btn_mobile {
+        min-width: 60px;
+        height: 60px;
+    }
+
+    .btn_mobile span {
+        font-size: 90%;
+    }
+
+    /*___| - FILTERS - |______mobile________*/
+    .filters {
         justify-content: flex-start;
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: 0;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .bodyfilter {
+        height: 52px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        border-radius: 52px;
+        border: 2px solid #d6d6d6;
+    }
+
+    .bodyfilter:nth-child(2) {
+        min-width: 180px;
+    }
+
+    .bodyfilter:nth-child(3) {
+        min-width: 140px;
+    }
+
+    .bodyfilter:nth-child(4) {
+        min-width: 174px;
+    }
+
+    .bodyfilter:nth-child(5) {
+        min-width: 226px;
+    }
+
+    .iconcercle {
+        height: 52px;
+        min-width: 52px;
+    }
+
+    .filters h2 {
+        justify-content: flex-start;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 5px;
+        font-size: 21px;
+    }
+
+    .filters p {
+        margin: 8px;
+        font-size: 16px;
+    }
+
+    .info {
+        margin-top: 30px;
         align-items: flex-start;
-        flex-flow: row wrap;
-        margin: 70px -43px -80px -67px;
-        padding-left: 65px;
-        padding-top: 35px;
-        padding-bottom: 35px;
-        background-color: #F2F2F2;
     }
 
-    .infos_footer_parent {
+    .info p {
         display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        width: 72%;
+        padding-right: 10px;
+        margin: 0;
+        font-size: 16px;
     }
 
-    .infos_footer:hover {
-        cursor: pointer;
+    .infocercle {
+        height: 26px;
+        min-width: 26px;
+        margin-right: 9px;
+        margin-top: -5px;
     }
 
-    /*_____________________________________________| - D E S K T O P - > T A B L E T T E - |__________________________________________________*/
-
-    @media screen and (min-width: 992px) and (max-width: 1403px) {
-
-        /*_______________| - HEBERGEMENTS-POPULAR - |______________*/
-        .hebergements {
-            align-items: center;
-            flex-flow: column wrap;
-        }
-
-        .mega_box_popular {
-            padding: 30px;
-            width: 100%;
-            margin-top: 30px;
-        }
-
-        .box_card_popular {
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-
-        .box_hebergement_popular {
-            max-width: 527px;
-        }
-
-        .legend_photo_popular {
-            padding-right: 60px;
-            padding-left: 10px;
-        }
-
-        .legend_photo_popular_2 {
-            padding-right: 5px;
-            padding-left: 10px;
-        }
-
-        .name_hebergement_popular {
-            margin-top: 11px;
-        }
-
-        /*_______________| - HEBERGEMENTS-REGULAR - |______________*/
-        .mega_box_regular {
-            width: 100%;
-        }
+    .infocercle span {
+        font-size: 75%;
     }
 
-    @media screen and (min-width: 992px) and (max-width: 1754px) {
-
-        .megabox_all_activities {
-            justify-content: space-evenly;
-        }
+    .titre_megabox {
+        font-size: 23px;
+        margin-left: 7%;
+        margin-bottom: 0;
     }
 
-    @media screen and (min-width: 1340px) and (max-width: 1800px) {
-
-        .megabox_all_activities {
-            justify-content: space-evenly;
-        }
-
-        .column_activity:nth-child(4) {
-            justify-content: space-evenly;
-            flex-direction: row;
-            width: 100%;
-        }
+    /*___| - HEBERGEMENT POPULAR - |______mobile________*/
+    .h2_pop {
+        padding-right: 10px;
     }
 
-    /*________________________________________| - T A B L E T T E -|________________________________________________________________________*/
-
-    @media screen and (max-width: 992px) {
-
-        body {
-            max-width: 100%;
-            padding: 0;
-        }
-
-        /*_______________| - NAVIGATION - |______tablette________*/
-        .logo img {
-            width: 170px;
-            height: auto;
-            margin: 25px 30px -28px 30px;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .sous_nav {
-            display: flex;
-            flex-direction: column;
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-
-        .menu {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            min-width: 100%;
-            padding-left: 0;
-            padding-right: 0;
-            margin-bottom: 20px;
-            list-style: none;
-
-        }
-
-        .menu li {
-            width: 50%;
-        }
-
-        .menu a {
-            justify-content: center;
-            padding-bottom: 22px;
-            padding-right: 0;
-            padding-left: 0;
-            font-size: 28px;
-            border-bottom: 4px solid #F2F2F2;
-        }
-
-        .menu a:hover {
-            color: #0065FC;
-            border-top: 4px solid rgba(0, 0, 0, 0);
-            border-bottom: 4px solid #0065FC;
-        }
-
-        header h1 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        header h2 {
-            font-size: 26px;
-            font-weight: 400;
-            margin-top: -10px;
-        }
-
-        /*_______________| - SEARCH BAR - |______tablette________*/
-        form {
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .localisation {
-            min-width: 84px;
-            height: 84px;
-        }
-
-        .localisation span {
-            font-size: 200%;
-        }
-
-        .champ {
-            width: 100%;
-            height: 84px;
-        }
-
-        .champ_mom {
-            width: 500px;
-            height: 84px;
-        }
-
-        .right {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .right p {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .btn_mobile {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-width: 84px;
-            height: 84px;
-            margin-left: -16px;
-            border: 0;
-            color: #fff;
-            border-radius: 20px 20px 20px 20px;
-            background-color: #0065FC;
-            font-size: 22px;
-            font-weight: 700;
-        }
-
-        .btn_mobile span {
-            font-size: 140%;
-        }
-
-        .btn_mobile:hover {
-            color: white;
-            cursor: pointer;
-            box-shadow: inset -2px -2px 7px rgba(0, 0, 0, .3),
-                inset 2px 2px 7px rgba(255, 255, 255, .3);
-        }
-
-        .btn_mobile:active {
-            box-shadow: inset 1px 1px 10px rgba(0, 0, 0, .3),
-                inset -1px -1px 5px rgba(255, 255, 255, .2);
-        }
-
-        .btn_desktop {
-            display: none;
-        }
-
-        /*_______________| - FILTERS - |______tablette________*/
-        .filters {
-            justify-content: space-evenly;
-            margin-top: 4px;
-            padding-right: 20px;
-            padding-left: 20px;
-        }
-
-        .filters h2 {
-            justify-content: center;
-            margin-right: 0;
-            font-size: 34px;
-            min-width: 100%;
-        }
-
-        .bodyfilter {
-            margin-right: 12px;
-        }
-
-        .info {
-            padding-left: 19px;
-        }
-
-        /*_______________| - HEBERGEMENTS-POPULAR - |______tablette________*/
-        .hebergements {
-            align-items: center;
-            flex-flow: column-reverse wrap;
-            margin: auto;
-        }
-
-        .mega_box_popular {
-            align-items: center;
-            padding: 0;
-            width: 100%;
-            border-radius: 0px;
-        }
-
-        .box_card_popular {
-            margin-bottom: 40px;
-        }
-
-        .h2_pop {
-            margin-bottom: 16px;
-        }
-
-        .box_card_popular {
-            width: 100%;
-        }
-
-        .link_popular {
-            margin: 10px 20px;
-        }
-
-        .box_hebergement_popular {
-            max-width: 527px;
-        }
-
-        .legend_photo_popular {
-            padding-right: 60px;
-            padding-left: 10px;
-        }
-
-        .legend_photo_popular_2 {
-            padding-right: 5px;
-            padding-left: 10px;
-        }
-
-        .name_hebergement_popular {
-            margin-top: 11px;
-        }
-
-        /*_______________| - HEBERGEMENTS-REGULAR - |______tablette________*/
-        .mega_box_regular {
-            width: 100%;
-            background-color: white;
-        }
-
-        .h2_reg {
-            margin-bottom: 16px;
-        }
-
-        /*_______________| - ACTIVITIES - |______tablette________*/
-        .titre_activite {
-            margin: 20px 0 0 50px;
-            font-size: 30px;
-        }
-
-        .megabox_all_activities {
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            margin: auto;
-            margin-left: 0px;
-        }
-
-        .activities {
-            padding-top: 20px;
-        }
-
-        .column_activity {
-            width: 100%;
-            padding: 0px;
-        }
-
-        .box_activity {
-            max-width: 490px;
-            width: 100%;
-            min-width: 270px;
-            margin: 16px 20px;
-        }
-
-        .link_activity {
-            min-width: 100%;
-            height: 260px;
-        }
-
-        .photo_activity {
-            min-width: 100%;
-            height: 200px;
-            min-height: 200px;
-        }
-
-        .column_activity:nth-child(2) .box_activity:nth-child(1) .photo_activity,
-        .column_activity:nth-child(2) .box_activity:nth-child(2) .photo_activity,
-        .column_activity:nth-child(4) .box_activity:nth-child(1) .photo_activity,
-        .column_activity:nth-child(4) .box_activity:nth-child(2) .photo_activity {
-            height: 200px;
-            min-height: 200px;
-        }
-
-        .column_activity:nth-child(2) .box_activity:nth-child(1) .link_activity,
-        .column_activity:nth-child(2) .box_activity:nth-child(2) .link_activity,
-        .column_activity:nth-child(4) .box_activity:nth-child(1) .link_activity,
-        .column_activity:nth-child(4) .box_activity:nth-child(2) .link_activity {
-            height: 260px;
-        }
-
-        .afficher_plus {
-            margin-bottom: 20px;
-        }
-
-        /*_______________| - F O O T E R - |___tablette_________*/
-        footer {
-            justify-content: space-between;
-            align-items: center;
-            flex-flow: column wrap;
-            width: 100%;
-            margin: 0;
-            padding-left: 0px;
-        }
-
-        .infos_footer_parent {
-            justify-content: space-evenly;
-            width: 100%;
-            padding-left: 0;
-        }
-
-        .infos_footer {
-            margin-right: 20px;
-            margin-left: 20px;
-        }
+    .icon_increase {
+        font-size: 150%;
     }
 
-    /*________________________________________| - M O B I L E -|________________________________________________________________________*/
-
-    @media screen and (max-width: 768px) {
-
-        /*_______________| - NAVIGATION - |______mobile________*/
-        .logo img {
-            width: 138px;
-        }
-
-        header h1 {
-            margin-bottom: 16px;
-        }
-
-        header h2 {
-            font-size: 22px;
-        }
-
-        .menu a {
-            font-size: 25px;
-        }
-
-        /*_______________| - SEARCHBAR - |______mobile________*/
-        form {
-            margin-top: 0;
-        }
-
-        .localisation {
-            min-width: 70px;
-            height: 70px;
-        }
-
-        .localisation span {
-            font-size: 170%;
-        }
-
-        .champ {
-            height: 70px;
-        }
-
-        .champ_mom {
-            width: 70%;
-            height: 70px;
-        }
-
-        .btn_mobile {
-            min-width: 70px;
-            height: 70px;
-        }
-
-        .btn_mobile span {
-            font-size: 115%;
-        }
-
-        .filters {
-            justify-content: flex-start;
-            margin-top: 0;
-            margin-left: 30px;
-            margin-right: 30px;
-        }
-
-        .filters h2 {
-            justify-content: flex-start;
-            margin-left: 0;
-            margin-right: 0;
-            font-size: 30px;
-        }
-
-        .info {
-            padding-right: 14px;
-        }
-
-        /*_____________| - HEBERGEMENTS REGULAR - |______mobile________*/
-
-        .box_card_regular {
-            width: 100%;
-        }
-
-        .box_hebergement_regular {
-            max-width: 510px;
-            width: 100%;
-            min-width: 270px;
-            margin: 0;
-        }
-
-        .link_regular {
-            min-width: 270px;
-            margin: 10px;
-        }
-
-        .photo_reg {
-            min-width: 100%;
-            object-position: 40% 60%;
-        }
-
-        .afficher_plus {
-            margin-left: 50px;
-            font-size: 28px;
-            width: 200px;
-        }
-
-        /*_______________| - F O O T E R - |___mobile_________*/
-
-        .infos_footer_parent {
-            justify-content: space-between;
-            flex-direction: column;
-            width: 70%;
-        }
-
-        footer h2 {
-            font-size: 28px;
-        }
-
-        footer p {
-            font-size: 20px;
-        }
+    .box_hebergement_popular {
+        max-width: 400px;
     }
 
-    @media screen and (max-width: 400px) {
 
-        .sous_nav {
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-        .sous_nav h1,
-        .sous_nav h2 {
-            padding-right: 30px;
-            padding-left: 30px;
-        }
-
-        .menu a {
-            font-size: 22px;
-        }
-
-        .menu li:nth-child(1) a {
-            justify-content: flex-end;
-        }
-
-        .localisation {
-            min-width: 60px;
-            height: 60px;
-        }
-
-        .localisation span {
-            font-size: 140%;
-        }
-
-        .champ {
-            height: 60px;
-        }
-
-        .champ_mom {
-            width: 70%;
-            height: 60px;
-        }
-
-        .btn_mobile {
-            min-width: 60px;
-            height: 60px;
-        }
-
-        .btn_mobile span {
-            font-size: 105%;
-        }
-
-        .filters {
-            margin-left: 0;
-            margin-right: 0;
-        }
-
-        .bodyfilter {
-            margin-right: 0;
-        }
-
-        .bodyfilter:nth-child(5) {
-            min-width: 290px;
-        }
-
-        .titre_megabox {
-            font-size: 142%;
-            margin-left: 15px;
-            margin-bottom: 0;
-        }
-
-        .photo_pop {
-            max-width: 145px;
-            min-width: 145px;
-            min-height: 178px;
-            border-radius: 22px 0 0 22px;
-            object-fit: cover;
-        }
-
-        .legend_photo_popular {
-            padding-right: 10px;
-        }
-
-        .name_hebergement_popular, .price_pop {
-            font-size: 18px;
-        }
-
-        .titre_activite {
-            margin: 20px 0 0px 30px;
-            font-size: 26px;
-        }
-
-        footer h2 {
-            font-size: 24px;
-        }
-
-        footer p {
-            font-size: 16px;
-        }
+    .link_popular {
+        max-width: 400px;
+        height: 142px;
+        border: 5px solid white;
+        border-radius: 20px;
     }
+
+    .photo_pop {
+        max-width: 130px;
+        min-width: 130px;
+        min-height: 130px;
+        border-radius: 16px 0 0 16px;
+    }
+
+    .legend_photo_popular {
+        padding-right: 30px;
+    }
+
+    .name_hebergement_popular, .price_pop,
+    .name_hebergement_regular, .price_reg {
+        font-size: 98%;
+    }
+
+    .stars_rating {
+        font-size: 80%;
+    }
+
+    .photo_reg {
+        height: 120px;
+    }
+
+    /*_____________| - HEBERGEMENTS REGULAR - |______mobile________*/
+
+    .mega_box_regular {
+        padding: 0;
+    }
+
+    .box_card_regular {
+        width: 100%;
+    }
+
+    .box_hebergement_regular {
+        max-width: 400px;
+        width: 100%;
+        min-width: 270px;
+        margin: 0;
+    }
+
+    .link_regular {
+        max-width: 400px;
+        min-width: 270px;
+        margin: 20px;
+        height: 218px;
+        border: 5px solid white;
+        border-radius: 20px;
+    }
+
+    .photo_reg {
+        min-width: 100%;
+        object-position: 40% 60%;
+        border-radius: 16px 16px 0 0px;
+    }
+
+    .afficher_plus {
+        margin-top: 10px;
+        margin-left: 7%;
+        font-size: 20px;
+        width: 200px;
+    }
+
+    /*_____________| - ACTIVITES - |______mobile________*/
+    .titre_activite {
+        margin-left: 7%;
+        font-size: 24px;
+    }
+
+    .box_activity {
+        max-width: 360px;
+    }
+
+    .link_activity {
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .photo_activity {
+        height: 140px;
+        min-height: 140px;
+        border-radius: 20px 20px 0 0px;
+    }
+
+    .column_activity:nth-child(2) .box_activity:nth-child(1) .photo_activity,
+    .column_activity:nth-child(2) .box_activity:nth-child(2) .photo_activity,
+    .column_activity:nth-child(4) .box_activity:nth-child(1) .photo_activity,
+    .column_activity:nth-child(4) .box_activity:nth-child(2) .photo_activity {
+        height: 140px;
+        min-height: 140px;
+    }
+
+    .column_activity:nth-child(2) .box_activity:nth-child(1) .link_activity,
+    .column_activity:nth-child(2) .box_activity:nth-child(2) .link_activity,
+    .column_activity:nth-child(4) .box_activity:nth-child(1) .link_activity,
+    .column_activity:nth-child(4) .box_activity:nth-child(2) .link_activity {
+        height: 200px;
+    }
+
+
+    /*_______________| - F O O T E R - |___mobile_________*/
+
+    footer {
+        flex-direction: column;
+        padding-left: 6%;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+
+    .sous_nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sous_nav h1,
+    .sous_nav h2 {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+}
